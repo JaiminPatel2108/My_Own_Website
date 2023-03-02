@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+    <div class="containersignup">
+        <div class="signupheading">Sign Up</div>
+        <div class="signupheading2">Stay tuned for the more information</div>
+        
+        <form action="signup" method="POST" class="form" id="form">
+
+            <input type="text" name="username" placeholder="Enter Your User Name" id="username">
+            <div id="usernameerror" class="errormes"></div>
+            <input type="email" name="email" placeholder="Enter Your Email here" id="email">
+            <div id="emailerror" class="errormes"></div>
+            <input type="password" name="password" placeholder="Password" id="password">
+            <div id="passworderror" class="errormes"></div>
+            <input type="submit" value="Sign Up" class="signupbtn" id="signupbtn">
+            <div class="or">   I have an account <a href="/login" class="slink">login</a></div> 
+                
+                    <!-- <li><a href="/login" class="link">login</a></li> -->
+                <!--  -->
+        </form>
+        <!-- </div> -->
+
+    </div>
+    <!-- <script src="/js/signup.js"></script> -->
+</body>
+</html>

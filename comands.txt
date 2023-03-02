@@ -1,0 +1,109 @@
+//to change the user name and the email or add them
+git config --global user.name Jimmy
+git config --global user.email pjaimind031@gmail.com
+
+//to open the vscode
+code.
+
+//to initialize the repository
+git init
+
+//to show all the hidden folders
+ls -lart
+
+//to show the status if we have change in the any file
+git status
+
+//there are 4 stages of the file
+1. untracked
+2. unmodified
+3. modified
+4. staged
+
+//to add the file in the staging area
+git add "file name"
+
+--> it is more flexible to add the file in the stagingarea first and then commiting it
+
+//to save the all changes in git
+git commit
+
+//to create the file from the gitbash
+touch "filename" 
+
+//to add all the file to the staging area
+git add -A
+
+//to match with tha last commit
+git checkout "filename"
+
+//to match all the file with last commit
+git checkout -f
+
+//to show the cahnges we have done in the file
+git diff
+
+//to show all the file in the gitbash
+ls
+
+//to remove the the file from the staging area only and sent it to the untracked file
+git rm --cached "filename"
+
+//to show all the commit
+git log
+
+//to show the last 2 commit only
+git log -p -2
+
+//to show only impoertant message of the gitstatus
+git status -s
+
+--> to use the .gitignorefile we have to make the folder and that folder will be add in the .gitignore file
+
+//to create the brach
+git branch "branchname"
+
+//to show the branch
+git branch
+
+//to switch the brach
+git checkout "brachname"
+
+//to add the change of the other branch to the current branch
+git merge "other branchname"
+example: git merge jaimin
+
+this is the branch jaimin
+
+
+//to make a branch and direct go through it
+git checkout -b "newbranchname"
+
+//to send to the github account
+git remote add origin "url"
+
+//to connect the origin with the master
+git push origin master
+
+--> it will not allow you so that,
+you have to go setting of the github > SSH and GPG keys > 
+
+//to add the new ssh key
+ ssh-keygen -t ed25519 -C "pjaimind031@gmail.com"
+-->this will be copied from the github
+
+//then after you have to run
+eval "$(ssh-agent -s)"
+--> this will give you a new id
+
+//then you have to run
+ ssh-add ~/.ssh/id_ed25519
+--> it will create your key
+
+//now add to the github
+clip < ~/.ssh/id_ed25519.pub
+
+//then you have to write cat in the above format in place of clip
+--> this will git you key description
+
+//enter addsshkey 
