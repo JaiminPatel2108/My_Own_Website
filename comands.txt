@@ -85,7 +85,7 @@ git remote add origin "url"
 //to connect the origin with the master
 git push origin master
 
---> it will not allow you so that,
+--> IF it will not allow you so that,
 you have to go setting of the github > SSH and GPG keys > 
 
 //to add the new ssh key
